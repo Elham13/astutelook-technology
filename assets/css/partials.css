@@ -1,0 +1,35 @@
+@font-face{
+   src: url(../fonts/Matter-Medium.836e1499.woff);
+   font-family: Matter-medium;
+}
+@font-face{
+   src: url(../fonts/Reckless-Regular.a77e1314.woff);
+   font-family: reckless;
+}
+
+:root{
+   --border-color: #aaa;
+   --bg-light: #fff;
+   --bg-dark: #000;
+   --text-light: #fff;
+   --text-dark: #000;
+   --text-title:  #fc951d;
+}
+
+.main-section{
+   background: url(../images/Hero_Approach-2\ \(1\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.main-content h1{
+   font-size: 4.5rem;
+   letter-spacing: 0.2rem;
+   text-transform: uppercase;
+   margin-top: 1rem;
+}
+
+.header .hamburger{
+   top: 20%;
+}
+

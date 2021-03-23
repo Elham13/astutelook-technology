@@ -1,0 +1,147 @@
+:root{
+   --border-color: #aaa;
+   --bg-light: #fff;
+   --bg-dark: #000;
+   --text-light: #fff;
+   --text-dark: #000;
+   --text-title:  #fc951d;
+}
+
+.main-section{
+   background: url(../images/cares.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.main-content h1{
+   font-size: 3.8rem;
+   letter-spacing: 0.2rem;
+   line-height: 4.3rem;
+}
+
+.header .hamburger{
+   top: 25%;
+}
+
+/* Job openingns */
+.job-openings{
+   height: 50vh;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-left: 5em;
+}
+
+.job-openings h1{
+   margin-left: 4.5rem;
+   align-self: center;
+   font-size: 4rem;
+}
+.job-openings p{
+   align-self: center;
+   margin-right: 5rem;
+   font-size: 1.3rem;
+   line-height: 2rem;
+}
+/* Job openingns */
+
+/* Job location */
+.job-locations .first-location{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+   padding-left: 5em;
+   height: 100vh;
+}
+
+.job-locations .first-location .left{
+   position: relative;
+}
+
+.job-locations .first-location .left img{
+   width: 300px;   
+}
+
+.first-location .left .img1{
+   height: 400px;
+   position: absolute;
+   left: 60%;
+   top: 60%;
+   transform: translate(-50%, -50%);
+}
+.first-location .left .img2{
+   height: 250px;
+   position: absolute;
+   left: 35%;
+   top: 30%;
+   transform: translate(-50%, -50%);
+}
+
+.first-location .right{
+   padding-top: 5rem;
+   padding-left: 4rem;
+}
+
+.first-location h1{
+   font-size: 44px;
+   line-height: 53px;
+   margin-bottom: 2rem;
+}
+
+.first-location p{
+   font-weight: 300;
+   font-size: 19px;
+   line-height: 30px;
+   margin-bottom: 1rem;
+}
+
+.first-location .bolder{
+   font-weight: 500;
+}
+
+.first-location .get-in-touch-dark{
+   margin-top: 4rem;
+}
+
+.footer-right{
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   flex-direction: column;
+}
+
+/* .footer-right .get-in-touch-dark, */
+.footer-right p{
+ font-size: 19px;
+ font-weight: 300;
+ margin-bottom: 3rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+   .header .hamburger{
+      margin-top: 10px;
+   }
+
+   .job-openings{
+      padding-left: 2rem;
+      grid-template-columns: 1fr;
+   }
+   .job-openings h1{
+      font-size: 2rem;
+      margin-left: 0;
+   }
+
+   .job-locations .first-location{
+      grid-template-columns: 1fr;
+      padding-left: 0;
+   }
+   .job-locations .first-location img{
+      display: none;
+   }
+   .job-locations .first-location .left{
+      display: none;
+   }
+
+}
+/* Responsive */

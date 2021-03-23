@@ -1,0 +1,333 @@
+@font-face{
+   src: url(../fonts/Matter-Medium.836e1499.woff);
+   font-family: Matter-medium;
+}
+@font-face{
+   src: url(../fonts/Reckless-Regular.a77e1314.woff);
+   font-family: reckless;
+}
+
+:root{
+   --border-color: #aaa;
+   --bg-light: #fff;
+   --bg-dark: #000;
+   --text-light: #fff;
+   --text-dark: #000;
+   --text-title:  #fc951d;
+}
+
+.main-section{
+   background: url(../images/Hero_Approach-2\ \(1\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.main-content h1{
+   font-size: 3.8rem;
+   letter-spacing: 0.2rem;
+   line-height: 4.3rem;
+}
+
+.header .hamburger{
+   top: 30%;
+}
+
+/* Our Approach */
+.our-approach{
+   width: 100%;
+   min-height: 100vh;
+   padding-left: 5em;
+}
+
+.our-approach h1{
+   font-size: 76px;
+   line-height: 80px;
+   color: var(--text-title);
+   margin-left: 4.5rem;
+   margin-top: 9rem;
+   margin-bottom: 2rem;
+   padding-right: 4rem;
+   font-family: reckless;
+   font-weight: 400;
+}
+
+.our-approach h4,
+.our-approach .services-offered h4{
+   margin-left: 4.5rem;
+   width: 60%;
+   color: var(--border-color);
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 25px;
+}
+
+.our-approach .gridy{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 6rem;
+   padding: 0 4.5rem;
+}
+
+.our-approach .gridy .left p,
+.our-approach .gridy .right p{
+   font-size: 19px;
+   margin: 2.3rem 0;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+.services-offered .service-list{
+   padding: 0 4.5rem;
+   margin-top: 2.5rem;
+   margin-bottom: 12rem;
+}
+
+.services-offered .service-list li{
+   padding: 1.5rem 0;
+   border-bottom: 1px solid var(--border-color);
+   font-size: 32px;
+   cursor: pointer;
+   position: relative;
+   line-height: 42px;
+   font-weight: 500;
+}
+
+.service-list li .hidden{
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   float: right;
+   display: none;
+}
+
+.service-list li .hidden span{
+   color: var(--border-color);
+}
+
+.services-offered .service-list:hover a{
+   color: #0000003b;
+}
+.services-offered .service-list li:hover a{
+   color: #000;
+}
+
+.services-offered .service-list li:hover .hidden{
+   display: inline-block;
+}
+
+.services-offered .service-list li::after{
+   content: '';
+   position: absolute;
+   top: 100%;
+   right: 0;
+   width: 500px;
+   height: 300px;
+   z-index: 1;
+   transition: all 0.4s ease-in-out;
+   opacity: 0;
+   transform: scale(0.6);
+}
+
+.services-offered .service-list li:nth-child(1)::after{
+   background: url(../images/hover1.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.services-offered .service-list li:nth-child(2)::after{
+   background: url(../images/hover2.png);
+   background-position: center;
+   background-size: cover;
+}
+.services-offered .service-list li:nth-child(3)::after{
+   background: url(../images/hover3.png);
+   background-position: center;
+   background-size: cover;
+}
+.services-offered .service-list li:nth-child(4)::after{
+   background: url(../images/hover4.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.services-offered .service-list li:hover::after{
+   opacity: 1;
+   transform: scale(1);
+}
+
+/* Our Approach */
+.our-approach-2{
+   background: #000000c7;
+   min-height: 100vh;
+   width: 100%;
+   padding-left: 5em;
+   padding-top: 5rem;
+   position: relative;
+   overflow-y: hidden;
+}
+
+.our-approach-2 h4{
+   color: var(--text-light);
+   margin-left: 4.5rem;
+   text-transform: uppercase;
+}
+
+.our-approach-2 h1{
+   margin-top: 2rem;
+   font-size: 4rem;
+   margin-left: 4.5rem;
+   color: var(--text-light);
+   width: 70%;
+   line-height: 5rem;
+   margin-bottom: 2rem;
+}
+
+.our-approach-2 h1 span{
+   color: var(--text-title);
+}
+
+.our-approach-2 p{
+   width: 40%;
+   float: right;
+   margin-right: 4rem;
+   color: #ffffffb9;
+   line-height: 1.7rem;
+   margin-top: 2rem;
+}
+
+.our-approach-2 img{
+   position: absolute;
+   width: 500px;
+   transform: rotate(-15deg);
+   left: -30px;
+   top: 380px;
+   filter: opacity(0.8);
+}
+
+/* Steps section */
+.steps{   
+   width: 100%;
+   min-height: 100vh;
+   padding-left: 5em;
+}
+
+.steps .gridy{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-bottom: 6rem;
+   margin-bottom: 6rem;
+}
+
+.steps .gridy .left{
+   margin-left: 4rem;
+   padding-top: 6rem;
+}
+
+.steps .gridy .step-head{
+   text-transform: uppercase;
+   font-size: 15px;
+   line-height: 17px;
+   font-weight: 400;
+}
+
+.steps .gridy .left h1{
+   font-size: 70px;
+   line-height: 76px;
+   font-weight: 500;
+   margin-top: 1rem;
+}
+
+.steps .gridy .right{
+   padding-top: 10rem;
+   padding-right: 4rem;
+}
+.steps .gridy .right h4{
+   font-size: 15px;
+   line-height: 17px;
+   font-weight: 400;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+.steps .gridy .right .desc{
+   font-size: 19px;
+   font-weight: 300;
+   line-height: 30px;
+}
+/* Steps section */
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+   .header .hamburger{
+      margin-top: 10px;
+   }
+
+   .our-approach{
+      padding-left: 0;
+   }
+   .our-approach h1{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-left: 2rem;
+      margin-bottom: 4rem;
+   }
+   .our-approach h4{
+      margin-left: 2rem;
+   }
+   .our-approach .gridy{
+      grid-template-columns: 1fr;
+      padding-left: 2rem;
+   }
+  
+   .our-approach .services-offered h4{
+      margin-left: 2rem;
+   }
+   .our-approach .services-offered .service-list{
+      padding-left: 2rem;
+      padding-right: 1rem;
+   }
+   .our-approach .services-offered .service-list li a{
+      font-size: 1.2rem;
+   }
+
+   .our-approach-2{
+      padding-left: 0;
+      width: 100%;
+   }   
+   .our-approach-2 h4{
+      margin-left: 2rem;
+   }
+   .our-approach-2 h1{
+      margin-left: 2rem;
+      font-size: 2rem;
+      line-height: 2.2rem;
+   }
+   .our-approach-2 p{
+      float: left;
+      margin-left: 2rem;
+      width: 100%;
+   }
+   .our-approach-2 img{
+      opacity: 0.2;
+   }
+
+   .steps{
+      padding-left: 0;
+   }
+   .steps .gridy{
+      grid-template-columns: 1fr;
+   }
+   .steps .gridy .left h1{
+      font-size: 1.5rem;
+      margin-top: 0;
+   }
+   .steps .gridy .right{
+      padding-top: 0;
+   }
+   .steps .gridy .right h4{
+      margin-left: 2rem;
+   }
+   .steps .gridy .right p{
+      margin-left: 2rem;
+      margin-top: 0;
+   }
+}
+/* Responsive */
